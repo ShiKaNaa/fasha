@@ -1,14 +1,14 @@
-trigger orderTrigger on SOBJECT (before update, after update) {
+trigger OrderTrigger on Order (before update, after update) {
 
     if(Trigger.isUpdate) {
-        List<Order> ordersList = trigger.new;
+        List<Order> ordersList = Trigger.new;
         
         if(Trigger.isBefore) {
-
+            OrderTriggerHandler.calculateNetAmountForOrder(ordersList);
         }
-        else if (Trigger.isAfter) {
+        // else if (Trigger.isAfter) {
             
-        }
+        // }
     }
 
 }
