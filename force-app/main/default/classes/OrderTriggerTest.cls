@@ -40,10 +40,17 @@ private with sharing class OrderTriggerTest {
     private static void setAccountRevenuesUpdateTest() {
 
         // Arrange
+        List<Order> ordersList = [SELECT AccountId, Status, TotalAmount, ShipmentCost__c, NetAmount__c FROM Order];
+        List<Order> ordersToUpdate = new List<Order>();
 
         // Act
         Test.startTest();
         Account accountToAppendOrder = [SELECT Id, Chiffre_d_affaire__c FROM Account LIMIT 1];
+        for(Order o : ordersList) {
+            o.Status = 'Ordered';
+            ordersToUpdate.add(o);
+        }
+        update ordersToUpdate;
         Test.stopTest();
 
 

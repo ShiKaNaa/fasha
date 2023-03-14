@@ -20,7 +20,10 @@ public with sharing class OrderTriggerHandler {
         Map<Id, Order> mapIdOrder = new Map<Id, Order>(ordersList);
         Set<Id> accRelatedId = new Set<Id>();
         for (Order ordr : mapIdOrder.values()) {
-            accRelatedId.add(ordr.AccountId);
+            //TODO: changer 'Draft' a 'Ordered'
+            if(ordr.get('Status') == 'Ordered') {
+                accRelatedId.add(ordr.AccountId);
+            }
         }
         
         List<Account> accList = [SELECT ID, Name, Chiffre_d_affaire__c FROM Account WHERE Id IN :accRelatedId];
