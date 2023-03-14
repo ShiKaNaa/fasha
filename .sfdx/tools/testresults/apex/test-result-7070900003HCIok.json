@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 2,
+    "passing": 1,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "50%",
+    "failRate": "50%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Feb 28 2023 3:14:58 PM",
+    "testExecutionTimeInMs": 18,
+    "testTotalTimeInMs": 18,
+    "commandTimeInMs": 152,
+    "hostname": "https://akkodis41-dev-ed.develop.my.salesforce.com",
+    "orgId": "00D0900000DYQKLEA5",
+    "username": "raphael.houdry@fasha.com",
+    "testRunId": "7070900003HCIok",
+    "userId": "0050900000BrlnPAAR"
+  },
+  "tests": [
+    {
+      "id": "07M09000003gxSTEAY",
+      "queueItemId": "709090000012FvUAAU",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900003HCIokAAH",
+      "methodName": "setAccountRevenuesUpdateTest",
+      "outcome": "Pass",
+      "apexLogId": "07L0900000BrkLFEAZ",
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 11,
+      "testTimestamp": "2023-02-28T14:14:58.000+0000",
+      "fullName": "OrderTriggerTest.setAccountRevenuesUpdateTest"
+    },
+    {
+      "id": "07M09000003gxSUEAY",
+      "queueItemId": "709090000012FvUAAU",
+      "stackTrace": "Class.OrderTriggerTest.setOrderNetAmountTest: line 16, column 1",
+      "message": "System.ListException: List index out of bounds: 0",
+      "asyncApexJobId": "7070900003HCIokAAH",
+      "methodName": "setOrderNetAmountTest",
+      "outcome": "Fail",
+      "apexLogId": "07L0900000BrkLFEAZ",
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 7,
+      "testTimestamp": "2023-02-28T14:14:59.000+0000",
+      "fullName": "OrderTriggerTest.setOrderNetAmountTest",
+      "diagnostic": {
+        "exceptionMessage": "System.ListException: List index out of bounds: 0",
+        "exceptionStackTrace": "Class.OrderTriggerTest.setOrderNetAmountTest: line 16, column 1",
+        "className": "OrderTriggerTest",
+        "compileProblem": "",
+        "lineNumber": 16,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

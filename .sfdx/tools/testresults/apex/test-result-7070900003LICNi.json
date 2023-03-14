@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Mar 13 2023 2:57:11 PM",
+    "testExecutionTimeInMs": 164,
+    "testTotalTimeInMs": 164,
+    "commandTimeInMs": 119,
+    "hostname": "https://akkodis41-dev-ed.develop.my.salesforce.com",
+    "orgId": "00D0900000DYQKLEA5",
+    "username": "raphael.houdry@fasha.com",
+    "testRunId": "7070900003LICNi",
+    "userId": "0050900000BrlnPAAR"
+  },
+  "tests": [
+    {
+      "id": "07M09000003huQmEAI",
+      "queueItemId": "709090000012H00AAE",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900003LICNiAAP",
+      "methodName": "setOrderNetAmountTest",
+      "outcome": "Pass",
+      "apexLogId": "07L0900000BsUHZEA3",
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 164,
+      "testTimestamp": "2023-03-13T13:57:12.000+0000",
+      "fullName": "OrderTriggerTest.setOrderNetAmountTest"
+    }
+  ]
+}

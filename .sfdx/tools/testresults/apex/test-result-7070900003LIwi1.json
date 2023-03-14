@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Mar 14 2023 11:27:57 AM",
+    "testExecutionTimeInMs": 30,
+    "testTotalTimeInMs": 30,
+    "commandTimeInMs": 119,
+    "hostname": "https://akkodis41-dev-ed.develop.my.salesforce.com",
+    "orgId": "00D0900000DYQKLEA5",
+    "username": "raphael.houdry@fasha.com",
+    "testRunId": "7070900003LIwi1",
+    "userId": "0050900000BrlnPAAR"
+  },
+  "tests": [
+    {
+      "id": "07M09000003hx5XEAQ",
+      "queueItemId": "709090000012H8NAAU",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900003LIwi1AAD",
+      "methodName": "setAccountRevenuesUpdateTest",
+      "outcome": "Pass",
+      "apexLogId": "07L0900000BsZpZEAV",
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 30,
+      "testTimestamp": "2023-03-14T10:27:59.000+0000",
+      "fullName": "OrderTriggerTest.setAccountRevenuesUpdateTest"
+    }
+  ]
+}

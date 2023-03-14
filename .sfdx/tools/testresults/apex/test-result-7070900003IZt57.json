@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Mar 07 2023 3:48:27 PM",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 108,
+    "hostname": "https://akkodis41-dev-ed.develop.my.salesforce.com",
+    "orgId": "00D0900000DYQKLEA5",
+    "username": "raphael.houdry@fasha.com",
+    "testRunId": "7070900003IZt57",
+    "userId": "0050900000BrlnPAAR"
+  },
+  "tests": [
+    {
+      "id": "07M09000003h5hqEAA",
+      "queueItemId": "709090000012GSfAAM",
+      "stackTrace": "Class.TestDataFactory.generateOrderItemsList: line 76, column 1\nClass.OrderTriggerTest.makeData: line 9, column 1",
+      "message": "System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [PricebookEntryId]: [PricebookEntryId]",
+      "asyncApexJobId": "7070900003IZt57AAD",
+      "methodName": "setOrderNetAmountTest",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 0,
+      "testTimestamp": "2023-03-07T14:48:29.000+0000",
+      "fullName": "OrderTriggerTest.setOrderNetAmountTest",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [PricebookEntryId]: [PricebookEntryId]",
+        "exceptionStackTrace": "Class.TestDataFactory.generateOrderItemsList: line 76, column 1\nClass.OrderTriggerTest.makeData: line 9, column 1",
+        "className": "TestDataFactory",
+        "compileProblem": "",
+        "lineNumber": 76,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

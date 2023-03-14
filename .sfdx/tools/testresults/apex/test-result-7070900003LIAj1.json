@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Mar 13 2023 1:57:19 PM",
+    "testExecutionTimeInMs": 390,
+    "testTotalTimeInMs": 390,
+    "commandTimeInMs": 128,
+    "hostname": "https://akkodis41-dev-ed.develop.my.salesforce.com",
+    "orgId": "00D0900000DYQKLEA5",
+    "username": "raphael.houdry@fasha.com",
+    "testRunId": "7070900003LIAj1",
+    "userId": "0050900000BrlnPAAR"
+  },
+  "tests": [
+    {
+      "id": "07M09000003huJHEAY",
+      "queueItemId": "709090000012GyOAAU",
+      "stackTrace": "Class.OrderTriggerTest.setOrderNetAmountTest: line 29, column 1",
+      "message": "System.DmlException: Update failed. First exception on row 0 with id 8010900000NagUSAAZ; first error: FAILED_ACTIVATION, An order must have at least one product.: []",
+      "asyncApexJobId": "7070900003LIAj1AAH",
+      "methodName": "setOrderNetAmountTest",
+      "outcome": "Fail",
+      "apexLogId": "07L0900000BsTR7EAN",
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 390,
+      "testTimestamp": "2023-03-13T12:57:22.000+0000",
+      "fullName": "OrderTriggerTest.setOrderNetAmountTest",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Update failed. First exception on row 0 with id 8010900000NagUSAAZ; first error: FAILED_ACTIVATION, An order must have at least one product.: []",
+        "exceptionStackTrace": "Class.OrderTriggerTest.setOrderNetAmountTest: line 29, column 1",
+        "className": "OrderTriggerTest",
+        "compileProblem": "",
+        "lineNumber": 29,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Mar 14 2023 11:12:13 AM",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 110,
+    "hostname": "https://akkodis41-dev-ed.develop.my.salesforce.com",
+    "orgId": "00D0900000DYQKLEA5",
+    "username": "raphael.houdry@fasha.com",
+    "testRunId": "7070900003LIxVa",
+    "userId": "0050900000BrlnPAAR"
+  },
+  "tests": [
+    {
+      "id": "07M09000003hwV9EAI",
+      "queueItemId": "709090000012H7eAAE",
+      "stackTrace": "Class.TestDataFactory.generateOrderItemsList: line 74, column 1\nClass.OrderTriggerTest.makeData: line 13, column 1",
+      "message": "System.DmlException: Update failed. First exception on row 0 with id 8010900000NatXGAAZ; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, OrderTrigger: execution of AfterUpdate\n\ncaused by: System.NullPointerException: Attempt to de-reference a null object\n\nClass.OrderTriggerHandler.updateAccountCA: line 31, column 1\nTrigger.OrderTrigger: line 10, column 1: []",
+      "asyncApexJobId": "7070900003LIxVaAAL",
+      "methodName": "setAccountRevenuesUpdateTest",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 0,
+      "testTimestamp": "2023-03-14T10:12:14.000+0000",
+      "fullName": "OrderTriggerTest.setAccountRevenuesUpdateTest",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Update failed. First exception on row 0 with id 8010900000NatXGAAZ; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, OrderTrigger: execution of AfterUpdate\n\ncaused by: System.NullPointerException: Attempt to de-reference a null object\n\nClass.OrderTriggerHandler.updateAccountCA: line 31, column 1\nTrigger.OrderTrigger: line 10, column 1: []",
+        "exceptionStackTrace": "Class.TestDataFactory.generateOrderItemsList: line 74, column 1\nClass.OrderTriggerTest.makeData: line 13, column 1",
+        "className": "TestDataFactory",
+        "compileProblem": "",
+        "lineNumber": 74,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

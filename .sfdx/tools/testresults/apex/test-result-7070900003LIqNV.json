@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Mar 14 2023 9:31:08 AM",
+    "testExecutionTimeInMs": 201,
+    "testTotalTimeInMs": 201,
+    "commandTimeInMs": 144,
+    "hostname": "https://akkodis41-dev-ed.develop.my.salesforce.com",
+    "orgId": "00D0900000DYQKLEA5",
+    "username": "raphael.houdry@fasha.com",
+    "testRunId": "7070900003LIqNV",
+    "userId": "0050900000BrlnPAAR"
+  },
+  "tests": [
+    {
+      "id": "07M09000003hvxdEAA",
+      "queueItemId": "709090000012H5WAAU",
+      "stackTrace": "Class.OrderTriggerTest.setOrderNetAmountTest: line 46, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected: 10, Actual: null",
+      "asyncApexJobId": "7070900003LIqNVAA1",
+      "methodName": "setOrderNetAmountTest",
+      "outcome": "Fail",
+      "apexLogId": "07L0900000BsY6nEAF",
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 201,
+      "testTimestamp": "2023-03-14T08:31:09.000+0000",
+      "fullName": "OrderTriggerTest.setOrderNetAmountTest",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected: 10, Actual: null",
+        "exceptionStackTrace": "Class.OrderTriggerTest.setOrderNetAmountTest: line 46, column 1",
+        "className": "OrderTriggerTest",
+        "compileProblem": "",
+        "lineNumber": 46,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

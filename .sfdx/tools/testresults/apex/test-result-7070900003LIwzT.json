@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Mar 14 2023 11:26:06 AM",
+    "testExecutionTimeInMs": 219,
+    "testTotalTimeInMs": 219,
+    "commandTimeInMs": 116,
+    "hostname": "https://akkodis41-dev-ed.develop.my.salesforce.com",
+    "orgId": "00D0900000DYQKLEA5",
+    "username": "raphael.houdry@fasha.com",
+    "testRunId": "7070900003LIwzT",
+    "userId": "0050900000BrlnPAAR"
+  },
+  "tests": [
+    {
+      "id": "07M09000003hwbHEAQ",
+      "queueItemId": "709090000012H8IAAU",
+      "stackTrace": "Class.OrderTriggerTest.setAccountRevenuesUpdateTest: line 62, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected: 500, Actual: 1000",
+      "asyncApexJobId": "7070900003LIwzTAAT",
+      "methodName": "setAccountRevenuesUpdateTest",
+      "outcome": "Fail",
+      "apexLogId": "07L0900000BsZn4EAF",
+      "apexClass": {
+        "id": "01p0900000StH1hAAF",
+        "name": "OrderTriggerTest",
+        "namespacePrefix": null,
+        "fullName": "OrderTriggerTest"
+      },
+      "runTime": 219,
+      "testTimestamp": "2023-03-14T10:26:07.000+0000",
+      "fullName": "OrderTriggerTest.setAccountRevenuesUpdateTest",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected: 500, Actual: 1000",
+        "exceptionStackTrace": "Class.OrderTriggerTest.setAccountRevenuesUpdateTest: line 62, column 1",
+        "className": "OrderTriggerTest",
+        "compileProblem": "",
+        "lineNumber": 62,
+        "columnNumber": 1
+      }
+    }
+  ]
+}
