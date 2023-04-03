@@ -23,13 +23,13 @@ private with sharing class OrderTriggerTest {
         // Act
         Test.startTest();
         for(Order o : ordersList) {
-            o.Status = 'Activated';
+            o.Status = 'Ordered';
             ordersToUpdate.add(o);
         }
         update ordersToUpdate;
         Test.stopTest();
 
-        List<Order> ordersUpdated = [SELECT Id, TotalAmount, ShipmentCost__c, NetAmount__c FROM Order WHERE Status = 'Activated'];
+        List<Order> ordersUpdated = [SELECT Id, TotalAmount, ShipmentCost__c, NetAmount__c FROM Order WHERE Status = 'Ordered'];
         // Assert
         System.assertEquals(50, ordersUpdated[0].get('NetAmount__c'));
 
