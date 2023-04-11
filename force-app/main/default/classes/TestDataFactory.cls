@@ -1,6 +1,15 @@
-@IsTest
+/**
+ * Data factory used for tests
+ */
+
+@isTest
 public with sharing class TestDataFactory {
 
+    /**
+    * Method to generate Accounts
+    * @param Integer : number of accounts to create
+    * @return List<Account>
+    */
     public static List<Account> generateAccountsList(Integer numberOfAccountsToCreate) {
         List<Account> accList = new List<Account>();
         for(Integer i = 0; i < numberOfAccountsToCreate; i++) {
@@ -11,13 +20,10 @@ public with sharing class TestDataFactory {
         return accList;
     }
 
-
-    // // J'en aurai peut-être pas besoin
-    // public static Pricebook2 getStandardPB() {
-    //     Pricebook2 standardPB = [SELECT ID FROM Pricebook2 WHERE isStandard = true LIMIT 1]; 
-    //     return standardPB;
-    // }
-
+    /**
+    * Method to generate a Pricebook
+    * @return Pricebook2
+    */
     public static Pricebook2 generatePricebook() {
         Pricebook2 fashaPriceBook = new Pricebook2(Name = 'Catalogue Fasha - Test',
                                                    Description = 'Pricebook for test', 
@@ -26,13 +32,22 @@ public with sharing class TestDataFactory {
         return fashaPriceBook;
     }
 
+    /**
+    * Method to generate generateProduct
+    * @return Product2
+    */
     public static Product2 generateProduct() {
         Product2 jean = new Product2(Name = 'Jean stylé', Family = 'Bas',  IsActive = true);
         insert jean;
         return jean;
     }
     
-    // @isTest
+    
+    /**
+    * Method to generate generatePriceBookEntry
+    * @param Product2 : related product
+    * @return PricebookEntry
+    */
     public static PricebookEntry generatePriceBookEntry(Product2 product) {
         PricebookEntry pbe = new PricebookEntry(
             Pricebook2Id = Test.getStandardPricebookId(),
@@ -44,6 +59,14 @@ public with sharing class TestDataFactory {
         return pbe;
     }
 
+    /**
+    * Method to generate Accounts
+    * @param PricebookEntry : related pricebook entry
+    * @param List<Account> : list of Accounts
+    * @param Integer : number of orders to create
+    * @param Integer : shipment cost
+    * @return List<Order>
+    */
     public static List<Order> generateOrdersList(PricebookEntry pbe, List<Account> accList, Integer numberOfOrdersToCreate, Integer shipmentCost) {
         List<Order> ordersList = new List<Order>();
         List<Contract> contractsList = new List<Contract>();
@@ -70,6 +93,13 @@ public with sharing class TestDataFactory {
         return ordersList;
     }
 
+    /**
+    * Method to generate Accounts
+    * @param List<Order> : list of Orders
+    * @param PricebookEntry : a price book entry
+    * @param Integer : quantity of items
+    * @return OrderItem
+    */
     public static OrderItem generateOrderItemsList(List<Order> ordersList, PricebookEntry pbe, Integer quantity) {
 
         List<OrderItem> orderItemList = new List<OrderItem>();
