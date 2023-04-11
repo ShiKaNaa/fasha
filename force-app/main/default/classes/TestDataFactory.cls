@@ -11,6 +11,7 @@ public with sharing class TestDataFactory {
         return accList;
     }
 
+
     // // J'en aurai peut-être pas besoin
     // public static Pricebook2 getStandardPB() {
     //     Pricebook2 standardPB = [SELECT ID FROM Pricebook2 WHERE isStandard = true LIMIT 1]; 
@@ -45,6 +46,17 @@ public with sharing class TestDataFactory {
 
     public static List<Order> generateOrdersList(PricebookEntry pbe, List<Account> accList, Integer numberOfOrdersToCreate, Integer shipmentCost) {
         List<Order> ordersList = new List<Order>();
+        List<Contract> contractsList = new List<Contract>();
+
+        for (Account acc : accList) {
+            Contract contract = new contract(
+                AccountId = acc.id,
+                Status = 'Draft',
+                ContractTerm = 10
+            );
+            contractsList.add(contract);
+        }
+        insert contractsList;
 
         for(Integer i = 0; i < numberOfOrdersToCreate; i++){
             Order ordr = new Order(AccountId = accList[0].Id,
