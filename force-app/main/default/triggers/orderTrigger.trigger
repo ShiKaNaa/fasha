@@ -10,10 +10,10 @@ trigger OrderTrigger on Order (before update, after update) {
         if(Trigger.isBefore) {
             OrderTriggerHandler.calculateNetAmountForOrder(ordersList);
         }
-        // else if (Trigger.isAfter) {
+        else if (Trigger.isAfter) {
             
-        //     OrderTriggerHandler.updateAccountCA(ordersList);
-        // }
+            OrderTriggerHandler.updateAccountCA(ordersList);
+        }
     }
 
 }
